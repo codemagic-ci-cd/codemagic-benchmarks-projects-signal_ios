@@ -1,6 +1,6 @@
 definitions:
   env_versions: &env_versions
-    xcode: latest
+    xcode: edge
   triggering:
     push: &push_event
       events:
