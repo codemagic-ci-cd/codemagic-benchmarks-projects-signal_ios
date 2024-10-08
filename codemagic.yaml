@@ -41,8 +41,8 @@ workflows:
   #     - *initializeSubmodules
   #     - *bundleInstall
   #     - *buildAndTest
-  ios-mac-mini-m1-workflow:
-    name: iOS Mac mini M1 Workflow
+  ios-mac-studio-m2-workflow:
+    name: iOS Mac Studio M2 Max Workflow
     # instance_type: mac_mini_m1
     environment:
       <<: *env_versions
@@ -53,9 +53,8 @@ workflows:
       - *initializeSubmodules
       - *bundleInstall
       - *buildAndTest
-  ios-mac-mini-m1-parallel-workflow:
+  ios-mac-mini-m2-parallel-workflow:
     name: iOS Mac mini M2 Parallel Workflow
-    # instance_type: mac_mini_m1
     environment:
       <<: *env_versions
     triggering:
@@ -68,7 +67,7 @@ workflows:
       - *buildAndTest
   ios-mac-mini-m2-workflow:
     name: iOS Mac mini M2 Workflow
-    # instance_type: mac_mini_m2
+    instance_type: mac_mini_m2
     environment:
       <<: *env_versions
     triggering:
@@ -78,8 +77,8 @@ workflows:
       - *initializeSubmodules
       - *bundleInstall
       - *buildAndTest
-  ios-mac-mini-m2-parallel-workflow:
-    name: iOS Mac mini M2 Parallel Workflow
+  ios-mac-studio-m2-parallel-workflow:
+    name: iOS iOS Mac Studio M2 Max Parallel Workflow
     environment:
       <<: *env_versions
     triggering:
